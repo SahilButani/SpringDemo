@@ -1,0 +1,10 @@
+package SpringDemo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Body {
+
+	ApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
+	context.getBean("human",Human.class);
+}

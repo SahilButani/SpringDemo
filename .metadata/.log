@@ -1,0 +1,592 @@
+!SESSION 2019-01-21 12:38:06.432 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2019-01-21 13:16:55.565
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.artifact.repository.compositeRepository
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:93)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:81)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:168)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:153)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.getArtifactRepositories(DownloadManager.java:110)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:95)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:111)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:255)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:80)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:48)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:178)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-01-21 13:16:55.568
+!MESSAGE An error occurred while committing the engine session for profile: _home_zadmin_eclipse_java_eclipse.
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-01-21 13:16:55.568
+!MESSAGE An error occurred while undoing the org.eclipse.equinox.internal.p2.engine.phases.Collect phase.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.getProfileDataDirectory(EngineSession.java:81)
+	at org.eclipse.equinox.internal.p2.engine.Phase.prePerform(Phase.java:117)
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.rollBackPhase(EngineSession.java:233)
+	at org.eclipse.equinox.internal.p2.engine.EngineSession.rollback(EngineSession.java:182)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:89)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:48)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:178)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-01-21 13:16:55.570
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-01-21 13:16:55.570
+!MESSAGE session context was:(profile=_home_zadmin_eclipse_java_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-01-21 13:16:55.570
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:543)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:119)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:114)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedRepository(ProvisioningContext.java:194)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:168)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:153)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.getArtifactRepositories(DownloadManager.java:110)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:95)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:111)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:255)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:80)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:48)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:178)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.findMatchingRepositoryExtensions(AbstractRepositoryManager.java:407)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:765)
+	at sun.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 20 more
+!SESSION 2019-01-21 13:17:03.755 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.help.base 2 0 2019-01-21 13:18:39.516
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.dtdeditor.doc.user_1.1.0.v201802171654 [420]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2019-01-21 13:18:39.580
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xmleditor.doc.user_1.1.0.v201802171654 [433]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2019-01-21 13:18:39.582
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xsdeditor.doc.user_1.0.800.v201711201733 [436]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.help.base 2 0 2019-01-21 13:18:39.588
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.sse.doc.user_1.2.0.v201802171654 [423]'. The index should be rebuilt with Lucene 7.0.0
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2019-01-21 13:20:00.002
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@2cbf525f - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$$Lambda$610/106535166@4193f897: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:119)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.eclipse.org:80 [marketplace.eclipse.org/198.41.30.195] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:93)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	... 3 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 18 more
+Contains: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:93)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2019-01-21 13:20:00.004
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.eclipse.org:80 [marketplace.eclipse.org/198.41.30.195] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:93)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 18 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2019-01-21 13:20:00.004
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:93)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2019-01-21 13:20:00.004
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:93)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:96)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:55)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:104)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider$1.run(ResourceProvider.java:309)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-01-21 14:14:33.040 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2019-01-21 14:14:48.190
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-21 14:14:48.191
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2299f6d7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5cd701e4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:17:22.858
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:22.860
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:22.860
+!MESSAGE Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.2.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:17:32.727
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-logging:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:32.727
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:32.728
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.2.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:17:42.461
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-test:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:42.461
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:17:42.461
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.2.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:18:06.822
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:06.822
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:06.822
+!MESSAGE Missing org.springframework.boot:spring-boot-starter:jar:javadoc:2.1.2.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:18:07.125
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter-logging:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:07.125
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:07.125
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.2.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-01-21 14:18:07.498
+!MESSAGE Could not download javadoc for org.springframework.boot:spring-boot-starter-test:2.1.2.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:javadoc:2.1.2.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-test:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:07.499
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:javadoc:2.1.2.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-01-21 14:18:07.499
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-test:jar:javadoc:2.1.2.RELEASE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:46.038
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:46.038
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@25b15c9c[org.springframework.tooling.boot.ls:1.2.0.201812201040(id=517)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:46.041
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:46.621
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.018
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.wNDrUchz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.019
+!MESSAGE subscribing to classpath changes: sts4.classpath.wNDrUchz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.020
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.021
+!MESSAGE subsribers = [sts4.classpath.wNDrUchz]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.022
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.032
+!MESSAGE project SpringDemo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.034
+!MESSAGE Preparing classpath changed notification SpringDemo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.034
+!MESSAGE project demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.035
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.044
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.046
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.wNDrUchz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.077
+!MESSAGE classpath=80 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:57.087
+!MESSAGE executing callback sts4.classpath.wNDrUchz SpringDemo false 80
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.132
+!MESSAGE executing callback sts4.classpath.wNDrUchz FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-01-21 14:18:59.132
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$Subscriptions$2.run(ReusableClasspathListenerHandler.java:179)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.133
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.133
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.138
+!MESSAGE classpath=56 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.139
+!MESSAGE executing callback sts4.classpath.wNDrUchz demo false 56
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:18:59.317
+!MESSAGE executing callback sts4.classpath.wNDrUchz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:31:31.849
+!MESSAGE Preparing classpath changed notification demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:31:31.936
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:31:31.936
+!MESSAGE executing callback sts4.classpath.wNDrUchz demo true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 14:31:31.992
+!MESSAGE executing callback sts4.classpath.wNDrUchz SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2019-01-21 14:46:55.609
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-21 14:46:55.609
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31da6b56,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@292b7b88,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
